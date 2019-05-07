@@ -8,9 +8,9 @@ public class Main {
 
     String replaced = s.replace("eraser","").replace("erase","").replace("dreamer","").replace("dream","");
 
-    if (replaced.isEmpty) {
+    if (replaced.isEmpty()) {
       System.out.println("YES");
-    } else if (!replaced.isEmpty) {
+    } else if (!replaced.isEmpty()) {
       System.out.println("NO");
     }
   }
