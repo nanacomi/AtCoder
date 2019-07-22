@@ -1,22 +1,27 @@
 import java.util.*;
-
-// 実行不可
 public class Main {
+
   public static void main(String[] args) {
+
     Scanner sc = new Scanner(System.in);
+    long A = sc.nextLong();
+    long B = sc.nextLong();
+    long C = sc.nextLong();
+    long D = sc.nextLong();
 
-    long a = sc.nextLong();
-    long b = sc.nextLong();
-    long c = sc.nextLong();
-    long d = sc.nextLong();
+    long lcm = (C * D) / gcd(D, C);
 
-    int result = 0;
-    for (long i = a; i <= b; i++) {
-      if((i%c != 0) && (i%d != 0)) {
-        result++;
-      }
+    System.out.println(count(B, C, D, lcm) - count(A-1, C, D, lcm));
+  }
+
+  private static long gcd(long a, long b) {
+    if (b == 0) {
+      return a;
     }
+    return gcd(b, a%b);
+  }
 
-    System.out.println(result);
+  private static long count(long n, long C, long D, long lcm) {
+    return n - n/C - n/D + n/lcm;
   }
 }
