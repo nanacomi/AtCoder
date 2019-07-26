@@ -12,13 +12,14 @@ public class Main {
     }
 
     Integer max = Collections.max(list);
-    System.out.println(max);
     long maxCount = list.stream().filter(l -> l == max).count();
 
     list.forEach(l -> {
       if(l == max && maxCount == 1) {
-        Integer nextMax = Collections.max(list.remove(l));
-        System.out.println(nextMax);
+        List<Integer> removedMaxList = list.stream()
+          .filter(li -> li != l)
+          .collect(Collectors.toList());
+        System.out.println(Collections.max(list));
       } else {
         System.out.println(max);
       }
