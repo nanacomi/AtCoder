@@ -1,6 +1,8 @@
+package ABC.case139;
+
 import java.util.*;
 
-public class Main {
+public class PowerSocket {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,7 +11,7 @@ public class Main {
 
         int count = 0;
         int sockets = 1;
-        for (int i = 1; i < b; i+=a) {
+        for (int i = 1; i < b; i += a) {
             i--;
             count++;
         }
