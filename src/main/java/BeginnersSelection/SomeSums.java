@@ -1,3 +1,5 @@
+package BeginnersSelection;
+
 import java.util.*;
 
 public class Main {

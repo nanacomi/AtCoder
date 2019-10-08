@@ -16,8 +16,8 @@ public class Main {
 
         Map<String, Long> map = texts.stream().collect(Collectors.groupingBy(x -> x, Collectors.counting()));
 
-        long max = map.values().stream().max((a, b) -> a.compareTo(b)).get();
+        Long sum = map.values().stream().filter(count -> count > 1).reduce(Long::sum).get();
 
-        System.out.println(max);
+        System.out.println(sum);
     }
 }
