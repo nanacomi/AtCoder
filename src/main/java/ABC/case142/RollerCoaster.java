@@ -1,6 +1,8 @@
+package ABC.case142;
+
 import java.util.*;
 
-public class Main {
+public class RollerCoaster {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
