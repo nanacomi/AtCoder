@@ -1,6 +1,8 @@
+package ABC.case138;
+
 import java.util.*;
 
-public class Main {
+public class RedOrNot {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
