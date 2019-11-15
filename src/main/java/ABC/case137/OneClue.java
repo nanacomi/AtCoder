@@ -1,6 +1,8 @@
+package ABC.case137;
+
 import java.util.*;
 
-public class Main {
+public class OneClue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

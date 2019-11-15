@@ -1,6 +1,8 @@
+package ABC.case136;
+
 import java.util.*;
 
-public class Main {
+public class UnevenNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
