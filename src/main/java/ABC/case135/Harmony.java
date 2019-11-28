@@ -1,6 +1,8 @@
+package ABC.case135;
+
 import java.util.*;
 
-public class Main {
+public class Harmony {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
