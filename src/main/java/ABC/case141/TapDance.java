@@ -1,6 +1,8 @@
+package ABC.case141;
+
 import java.util.*;
 
-public class Main{
+public class TapDance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

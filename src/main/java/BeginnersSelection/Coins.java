@@ -1,7 +1,7 @@
 package BeginnersSelection;
 
 import java.util.*;
-public class Main {
+public class Coins {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 
